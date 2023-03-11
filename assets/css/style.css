@@ -12,7 +12,6 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
-
 a {
   color: #cc1616;
 }
@@ -117,6 +116,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   transition: all 0.5s;
   color: rgba(255, 255, 255, 0.6);
+}
+#topbar-iframe{
+  transition: 1.3s;
 }
 
 #topbar.topbar-scrolled {
@@ -1336,9 +1338,13 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background: #0c0c0c;
-  padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
+  padding: 0 0 30px 0;
+}
+
+#footer-backfill{
+  background: #0c0c0c;
 }
 
 #footer .footer-top {
@@ -1491,17 +1497,14 @@ section {
     margin: -20px 0 30px 0;
   }
 }
-/*div#slider {  width: 100%;  background: rgba(0, 0, 0, 0.5);*/
-/*  height: 100vh; overflow: hidden;}*/
-/*div#slider figure img {  width: 20%; float: left; }*/
-/*div#slider figure {*/
-/*  background: rgba(0, 0, 0, 0.5);*/
-/*  position: relative;*/
-/*  width: 500%;*/
-/*  margin: 0;*/
-/*  left: 0;*/
-/*  text-align: left;*/
-/*  font-size: 0;*/
-/*  animation: 30s slidy infinite;*/
-/*}*/
+
+#footer-iframe::-webkit-scrollbar {
+  display: none;
+}
+#footer-iframe {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
 
